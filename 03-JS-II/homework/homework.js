@@ -69,7 +69,7 @@ function colors(color) {
       break;
 
     case "orange":
-      return "This is orangre";
+      return "This is orange";
       break;
 
     default:
@@ -125,7 +125,10 @@ function operadoresLogicos(num1, num2, num3) {
     return "Hay negativos";
   } else if ((num1 > num2 && num1 > num3) && num1 > 0) {
     return "Número 1 es mayor y positivo";
-  } else {
+  } else if(num3 > num1 && num3 > num2){
+    num3++;
+    return num3;
+  }else {
     return false;
   }
 
@@ -142,7 +145,7 @@ function esPrimo(numero) {
 
 
   if (numero == 0 || numero == 1) {
-    esCorrecto == false;
+    esCorrecto = false;
   } else {
     for (i = 2; i < numero; i++) {
       if ((numero % i) == 0) {
