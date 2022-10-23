@@ -70,9 +70,9 @@ function tienenMismaLongitud(str1, str2) {
   var long1 = str1.lenght;
   var long2 = str2.lenght;
   if(long1 == long2){
-    return true;
-  }else{
     return false;
+  }else{
+    return true;
   }
 }
 
