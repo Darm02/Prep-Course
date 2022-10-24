@@ -60,7 +60,7 @@ function dePalabrasAFrase(palabras) {
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
   var texto = "";
-  array.forEach(element => {
+  palabras.forEach(element => {
     texto = texto + element + " ";
   });
 
@@ -247,7 +247,7 @@ function breakStatement(numero) {
   for(i = 1; i <= 10; i++){
     
     numero = numero + 2;
-    array[i] = numero;
+    array[i-1] = numero;
     if(numero == i){
       seParo = true;
       break;
@@ -266,14 +266,14 @@ function continueStatement(numero) {
   //Pista: usá el statement 'continue'
   // Tu código:
   array = [];
-  var seParo = false;
+
   for(i = 1; i <= 10; i++){
     
     if(5 == i){
       continue;
     }else{
       numero = numero + 2;
-      array[i] = numero;
+      array[i-1] = numero;
     }
   }
   return array;
