@@ -26,9 +26,9 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  array.forEach(element => {
-    element = element + 1;
-  });
+  for(i = 0; i < array.length; i++){
+    array[i] = array[i] + 1;
+  }
 
   return array;
 }
@@ -129,10 +129,12 @@ function multiplicarArgumentos() {
 
   if(arguments.length > 1){
     var multiplicacion = 1;
-    arguments.forEach(element => {
-      multiplicacion = multiplicacion * element;
-    });
+    for(i = 0; i < arguments.length; i++){
+      multiplicacion = multiplicacion * arguments[i];
+    }
+
     return multiplicacion;
+
   }else if(arguments.length == 0){
     return 0;
   }else{
@@ -146,7 +148,10 @@ function cuentoElementos(arreglo){
   //Escribe tu código aquí
   var cantidad = 0;
   arreglo.forEach(element => {
-    cantidad = cantidad +1;
+    if(element >18){
+      cantidad = cantidad +1;
+    }
+    
   });
   return cantidad;
 }
@@ -163,7 +168,7 @@ function diaDeLaSemana(numeroDeDia) {
     if(numeroDeDia == 1 || numeroDeDia == 7){
       return "Es fin de semana";
     }else{
-      return "Es dia laboral";
+      return "Es dia Laboral";
     }
   }else{
     return "Dia no valido";
@@ -237,7 +242,19 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-  
+  array = [];
+  var seParo = false;
+  for(i = 1; i <= 10; i++){
+    
+    numero = numero + 2;
+    array[i] = numero;
+    if(numero == i){
+      seParo = true;
+      break;
+    }
+  }
+
+  return seParo == true ? "Se interrumpió la ejecución" : array;
 }
 
 
@@ -248,6 +265,18 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  array = [];
+  var seParo = false;
+  for(i = 1; i <= 10; i++){
+    
+    if(5 == i){
+      continue;
+    }else{
+      numero = numero + 2;
+      array[i] = numero;
+    }
+  }
+  return array;
 }
 
 
