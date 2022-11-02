@@ -22,7 +22,7 @@ function agregarPropiedad (objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
-  objeto[property] = nombre;
+  objeto[property] = null;
   return objeto;
 }
 
@@ -66,6 +66,7 @@ function tieneEmail (usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
+  return usuario.email != undefined ? true : false;
 }
 
 function tienePropiedad (objeto, propiedad) {
@@ -73,6 +74,7 @@ function tienePropiedad (objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+  return objeto[propiedad] == null ? false : true;
 }
 
 function verificarPassword (usuario, password) {
@@ -80,12 +82,15 @@ function verificarPassword (usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // Tu código:
+  return usuario.password == password ? true : false;
 }
 
 function actualizarPassword (usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevaPassword"
   // Devuelve el objeto
   // Tu código:
+  usuario.password = nuevaPassword;
+  return usuario;
 }
 
 function agregarAmigo (usuario, nuevoAmigo) {
@@ -93,6 +98,8 @@ function agregarAmigo (usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // Tu código:
+  usuario["amigos"].push(nuevoAmigo);
+  return usuario;
 }
 
 function pasarUsuarioAPremium (usuarios) {
@@ -101,6 +108,10 @@ function pasarUsuarioAPremium (usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
+  usuarios.forEach(element => {
+    element.esPremium = true;
+  });
+  return usuarios;
 }
 
 function sumarLikesDeUsuario (usuario) {
@@ -110,6 +121,13 @@ function sumarLikesDeUsuario (usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
+  var sumatoria = 0;
+  
+  usuario.posts.forEach( element => {
+    sumatoria += element.likes;
+  });
+
+  return sumatoria;
 }
 
 function agregarMetodoCalculoDescuento (producto) {
@@ -122,7 +140,10 @@ function agregarMetodoCalculoDescuento (producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
-
+  producto["calcularPrecioDescuento"] = function(){
+    return producto.precio - (producto.precio * producto.porcentajeDeDescuento)
+  };
+  return producto;
 }
 
 // No modificar nada debajo de esta línea
