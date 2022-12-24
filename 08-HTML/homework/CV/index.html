@@ -1,37 +1,171 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="stylesCV.css">
-    </head>
-    <body>
-        <div id="header">
-            
-            <img src="" alt="">
-            
-            <h1 style="margin-bottom: 10px;">David Rangel</h1>
 
-            <span>Estudiante</span>
+<head>
+    <link rel="stylesheet" href="stylesCV.css">
+    <meta charset="utf-8">
+</head>
 
+<body>
+    <div id="header">
+
+        <div class="imagenCircular">
+            <img src="imagenes/Yo.jpeg" alt="">
+        </div>
+
+        <h1>David Rangel</h1>
+
+        <span>Estudiante</span>
+
+        <span>
+            <a href="mailto:david02rangel@gmail.com">david02rangel@gmail.com</a>
+        </span>
+    </div>
+
+
+    <nav>
+        <ul class="navegador">
+            <li><a href="#perfil">Descripción Personal</a></li>
+            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#expLaborales">Experiencias Laborales</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div id="quienSoy" class="seccion">
             <span>
-                <a href="mailto:david02rangel@gmail.com">david02rangel@gmail.com</a>
+                Soy estudiante del técnico superior Analista Programador de IPLeones, actualmente cursando en el 2do
+                año. Esta página es una documentación de mi trabajo y persona.
             </span>
         </div>
 
 
-        <nav>
-            <ul class="navegador">
-                <li><a href="">Descripción Personal</a></li>
-                <li><a href="">Educación</a></li>
-                <li><a href="">Experiencias Laborales</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Hobbies</a></li>
-            </ul>
-        </nav>
+
+        <div id="perfil" class="seccion">
+            <div class="texto">
+                <h2>Descripción Personal</h2>
+                <p>
+                    Soy oriundo de Barquisimeto, Venezuela. Como persona, me identifico como alguien responsable,
+                    socialmente proactivo y eficiente. En mi área profesional, soy un programador junior orientado a los
+                    detalles que ofrece excelentes habilidades analíticas y la importante capacidad de funcionar bien
+                    tanto de forma independiente como en entornos de equipo de ritmo rápido.
+                </p>
+            </div>
+        </div>
+
+
+
+
+        <div id="educacion" class="seccion">
+            <div class="texto">
+                <h2>Formación Educativa</h2>
+                <p>
+                <ul>
+                    <li>Educación Media General en Ciencias, culminada en 2018. <br> Educativa Colegio Salto Ángel.
+                    </li>
+                    <br>
+                    <li>
+                        Técnico Superior Analista Programador, actualmente en 2do año.
+                        <br>Instituto Profesional Los Leones
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+
+        <div id="expLaborales" class="seccion">
+            <div class="texto">
+                <h2>Experiencias Laborales</h2>
+                <p>
+                <ul>
+                    <li>Botillería Obatala, Barquisimeto, Venezuela.
+                        <ul>
+                            <li>
+                                febrero - noviembre de 2019.
+                            </li>
+                            <li>Funciones: atención al público,
+                                ayudante de almacén, realizar
+                                inventarios de mercancía y aseo.</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>
+                        Subway Patio Centro, Santiago, Chile.
+                        <ul>
+                            <li>
+                                diciembre de 2021 - agosto de 2022.
+                            </li>
+                            <li>Funciones: atención al público,
+                                elaboración de productos,
+                                limpieza y orden del lugar de
+                                trabajo, realización de inventarios.</li>
+                        </ul>
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+
+        <div id="skills" class="seccion">
+            <div class="texto">
+                <h2>Habilidades</h2>
+
+                <div class="texto flexBox">
+                    <div class="item">
+                        <h3>Nivel Avanzado <br> de Inglés</h3>
+                        <p>
+                            Capacidad para comprender mensajes orales largos de cualquier tipo, extraer conclusiones
+                            implícitas y hacer deducciones. Comprensión de instrucciones y artículos técnicos y
+                            especializados de campos no necesariamente conocidos.
+                        </p>
+                    </div>
+
+                    <div class="item">
+                        <h3>Análisis de Algoritmos</h3>
+                        <p>
+                            Capacidad de resolver los distintos problemas no triviales que están al alcance de los
+                            computadores. El análisis de la eficiencia y calidad de estos algoritmos, así como las
+                            principales técnicas de diseño de los mismos.
+                        </p>
+                    </div>
+
+                    <div class="item">
+                        <h3>Aptitudes <br> Sociales</h3>
+                        <p>
+                            Responsable, proactivo, dinámico, dominio de análisis, perseverancia y constancia en el área
+                            desempeñada. Capacidad de trabajar en equipo en un ambiente de resiliencia, aprendizaje
+                            activo, flexibilidad
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="hobbies" class="seccion">
+            <div class="texto">
+                <h2>Hobbies</h2>
+                <p>
+                <ul>
+                    <li>Música <br> The Beatles, Pearl Jam, Interpol, The Strokes, Radiohead...
+                    </li>
+                    <br>
+                    <li>
+                        Películas:
+                        <br>Grand Hotel Budapest, Matrix, The Batman (2022), The Shawshank Redemption, Django Unchained...
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
         
-        
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </footer>
 
+</body>
 
-
-    </body>
 </html>
