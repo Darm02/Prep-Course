@@ -1,0 +1,50 @@
+body{
+    background-color: aqua;
+}
+
+#header{
+    text-align: center;
+    background-color: white;
+    margin: 0;
+    padding: 30px;
+}
+
+#header > span{
+    display: block;
+    margin-bottom: 10px;
+}
+
+span > a{
+    color: black;
+}
+
+
+nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.navegador{
+    margin: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    background-color:blanchedalmond;
+    height: 50px;
+}
+
+
+li > a{
+    text-decoration: none;
+    color: black;
+    padding: 16px 50px 16px 50px;
+    background-color:blanchedalmond;
+}
+
+li > a:hover{
+    background-color: black;
+}
+
+
