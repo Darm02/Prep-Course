@@ -69,6 +69,32 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+
+  arreglo = s.split('');
+
+  arregloSinMayusculas = arreglo.filter(function (letra) {
+    if (!(letra === letra.toUpperCase())) {
+      return letra;
+    }
+  });
+
+  arregloMayusculas = arreglo.filter(function (letra) {
+    if ((letra === letra.toUpperCase())) {
+      return letra;
+    }
+  });
+
+  nuevo = "";
+
+  for (i = 0; i < arregloMayusculas.length; i++) {
+    nuevo += arregloMayusculas[i];
+  }
+
+  for (i = 0; i < arregloSinMayusculas.length; i++) {
+    nuevo += arregloSinMayusculas[i];
+  }
+
+  return nuevo;
 }
 
 
