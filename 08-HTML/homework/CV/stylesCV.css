@@ -172,7 +172,7 @@ li > ul > li {
   .navegador {
     margin: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
     background-color: #4f4741;
