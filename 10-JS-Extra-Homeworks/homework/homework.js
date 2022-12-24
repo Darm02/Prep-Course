@@ -15,7 +15,7 @@ function deObjetoAmatriz(objeto) {
   for (let clave in objeto) {
     matriz[i] = new Array(2);
     matriz[i][0] = clave;
-    matriz[i][1] = objeto[clave]
+    matriz[i][1] = objeto[clave];
     i++;
   }
 
@@ -28,6 +28,39 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+  original = string.split('');
+  arrayDistintos = [];
+
+  original.forEach((element) => {
+    if (arrayDistintos.includes(element) !== true) {
+      arrayDistintos.push(element);
+    }
+  });
+
+  cantidadesLetras = [];
+  iterador = 0;
+
+  for (i = 0; i < arrayDistintos.length; i++) {
+
+    contador = 0;
+    for (j = 0; j < original.length; j++) {
+      if (arrayDistintos[i] === original[j]) {
+        contador++;
+      }
+    }
+    cantidadesLetras[i] = contador;
+    iterador++;
+
+  }
+
+  const nuevoObjeto = {};
+
+  for (i = 0; i < arrayDistintos.length; i++) {
+    nuevoObjeto[arrayDistintos[i]] = cantidadesLetras[i];
+  }
+
+  return nuevoObjeto;
+
 }
 
 
