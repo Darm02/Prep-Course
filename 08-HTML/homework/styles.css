@@ -1,12 +1,39 @@
 #thirdDiv{
-    width: 500px;
+    height: 600px;
+    width: 400px;
     background-color: lightblue;
-    padding: 50px;
+    padding: 40px;
     border-width: 2px;
     border-color: darkblue;
     border-style: dotted;
     margin: 2px;
     font-size: 20px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.column{
+    flex: 1;
+}
+
+body{
+    background-image: url(https://articles-img.sftcdn.net/images/f_auto,q_auto/w_1920,h_1080/v1582331925/paisaje_6_hsj0ei/paisaje_6_hsj0ei.jpg);
+    background-repeat: no-repeat;
 }
 
 a{
@@ -15,8 +42,8 @@ a{
 
 .divClass{
     background-color: rgb(255, 213, 219);
-    padding: 50px;
-    width: 500px;
+    padding: 40px;
+    width: 400px;
     border-width: 2px;
     border-color:darkred;
     border-style: dotted;
