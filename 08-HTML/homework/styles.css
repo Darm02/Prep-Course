@@ -1,0 +1,39 @@
+#thirdDiv{
+    width: 500px;
+    background-color: lightblue;
+    padding: 50px;
+    border-width: 2px;
+    border-color: darkblue;
+    border-style: dotted;
+    margin: 2px;
+    font-size: 20px;
+}
+
+a{
+    color: darkred;
+}
+
+.divClass{
+    background-color: rgb(255, 213, 219);
+    padding: 50px;
+    width: 500px;
+    border-width: 2px;
+    border-color:darkred;
+    border-style: dotted;
+    margin: 2px;
+}
+
+#spanId{
+    font-size: 18px;
+}
+
+h1{
+    color:darkred;
+}
+
+img{
+    width: 200px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
