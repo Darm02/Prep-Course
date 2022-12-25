@@ -164,11 +164,12 @@ function sortArray(arr) {
   //Escribe tu código aquí
 
   arrSorted = arr.sort( 
-    function(element){
-      return element.length;
+    function(a,b){
+      return a.length - b.length;
     }
-
   );
+
+  return arrSorted;
 
 }
 
@@ -179,6 +180,16 @@ function buscoInterseccion(arreglo1, arreglo2) {
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
+  arrayInterseccion = [];
+  i = 0;
+  arreglo1.forEach((element) => {
+    encontrado = arreglo2.find(element2 => element2 === element);
+    if(encontrado != undefined){
+        arrayInterseccion[i] = encontrado;
+        i++;
+    }
+  });
+  return arrayInterseccion;
 }
 
 
