@@ -50,6 +50,13 @@ a{
     margin: 2px;
 }
 
+#encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
 #spanId{
     font-size: 18px;
 }
